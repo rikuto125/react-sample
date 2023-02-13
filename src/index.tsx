@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Hello from "./components/Hello";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
+    //描画するJSXタグを指定している
+    <React.StrictMode>
+      {/*Appはsrc/App.tsxからインポートしたものを使用している*/}
+        <Hello />
   </React.StrictMode>
 );
 
